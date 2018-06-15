@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<form method="POST">
+			 <input name="firstNumber" type="number" required>
+			 <select name="operation">
+			 	<option value="+">+</option>
+			 	<option value="-">-</option>
+			 	<option value="*">*</option>
+			 	<option value="/">/</option>
+			 	<option value="^">^</option>
+			 	<option value="nth-root">nth-root</option>
+			 	<option value="log">log</option>
+			 	<option value="sin">sin</option>
+			 	<option value="cos">cos</option>
+			 	<option value="tan">tan</option>
+			 	<option value="sinh">sinh</option>
+			 	<option value="cosh">cosh</option>
+			 	<option value="tanh">tanh</option>
+			 </select>
+			 <input name="secondNumber" type="number" required>
+			 <input type="submit">
+		</form>
+		
+		<form>
+		    {{#finalResult }}
+		      {{ finalResult }}
+		    {{/finalResult }}
+		    </br>
+			{{#history}}
+			  {{.}}
+			 </br>
+			{{/history}}
+		</form>
+	
+	
+	</body>
+</html>
